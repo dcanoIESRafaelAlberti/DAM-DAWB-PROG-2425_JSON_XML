@@ -228,7 +228,7 @@ Claro, aquí tienes un ejemplo completo y básico con todas las etapas que menci
 
 ### **9. Ejemplo Completo**
 
-#### 9.1. Fichero JSON inicial (`datos.json`).
+#### 9.1. Fichero JSON inicial (`datos_usuarios.json`).
 
 Este es el contenido inicial del archivo JSON que usaremos:
 
@@ -251,7 +251,7 @@ El código realiza las siguientes operaciones:
 4. Elimina un usuario por su `id`.
 5. Guarda los cambios en el archivo.
 
-#### 9.3. Código en Python.
+#### 9.3. Código en Python: **Gestión de usuarios**.
 
 ```python
 import json
@@ -357,7 +357,7 @@ def main():
     Función principal que realiza las operaciones de gestión de un archivo JSON.
     """
     # Nombre del fichero JSON
-    nombre_fichero = "datos.json"
+    nombre_fichero = "datos_usuarios.json"
 
     # 1. Cargar datos desde el fichero JSON
     datos = cargar_json(nombre_fichero)
@@ -387,7 +387,7 @@ if __name__ == "__main__":
 
 ---
 
-#### 9.4. Explicación paso a paso
+#### 9.4. Explicación paso a paso.
 
 1. **Función `cargar_json`:**
    - Lee el contenido del archivo JSON.
