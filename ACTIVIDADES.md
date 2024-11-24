@@ -6,7 +6,7 @@ Completa el código del ejemplo ***"Gestión de usuarios"*** para ampliar la fun
 
 1. `mostrar_datos`: que mostrará de forma organizada el contenido del archivo JSON.
 
-2. `inicializar_datos`: que copiará el contenido del archivo origen (`datos_orig.json`) a otro archivo destino (`datos.json`).
+2. `inicializar_datos`: que copiará el contenido del archivo origen (`datos_usuarios_orig.json`) a otro archivo destino (`datos_usuarios.json`).
 
 Al finalizar la actividad, deberás integrar estas funciones en el programa principal (`main`) y probarlas en diferentes escenarios.
 
