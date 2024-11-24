@@ -1,4 +1,4 @@
-## ACTIVIDADES
+## ACTIVIDAD JSON
 
 ### **1. Manejo de Archivos JSON**
 
