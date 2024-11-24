@@ -21,7 +21,7 @@ Ejemplo de JSON:
 
 ### **JSON en Python**
 
-(Resumen del Manejo de Archivos JSON en Python)[JSON_Python.md]
+[Resumen del Manejo de Archivos JSON en Python](JSON_Python.md)
 
 ---
 
@@ -54,7 +54,7 @@ Ejemplo de XML:
 
 ### **XML en Python**
 
-(Resumen del Manejo de Archivos XML en Python)[XML_Python.md]
+[Resumen del Manejo de Archivos XML en Python](XML_Python.md)
 
 ---
 
