@@ -1,25 +1,6 @@
-## JSON
+## JSON en Python
 
-Los archivos JSON (JavaScript Object Notation) son un formato de datos ligero utilizado para intercambiar información de manera sencilla. 
-En Python, se gestionan principalmente con el módulo integrado `json`, que permite leer, escribir y manipular datos JSON de forma sencilla.
-
----
-
-### **1. Conceptos básicos de JSON**
-
-Un archivo JSON está estructurado en pares clave-valor, similar a un diccionario de Python. Puede contener objetos (estructuras anidadas) y listas.
-
-Ejemplo de JSON:
-```json
-{
-    "nombre": "Juan",
-    "edad": 30,
-    "habilidades": ["Python", "JavaScript"],
-    "activo": true
-}
-```
-
-### **2. Importar el módulo `json`**
+### **1. Importar el módulo `json`**
 
 El módulo `json` está disponible en la biblioteca estándar de Python, por lo que no necesitas instalar nada adicional.
 
@@ -29,9 +10,9 @@ import json
 
 ---
 
-### **3. Leer archivos JSON**
+### **2. Leer archivos JSON**
 
-#### **3.1 Leer JSON desde un archivo**
+#### **2.1 Leer JSON desde un archivo**
 Se usa `json.load()` para convertir el contenido del archivo JSON en un objeto de Python (normalmente un diccionario o una lista).
 
 Ejemplo:
@@ -46,7 +27,7 @@ with open("datos.json", "r") as archivo:
 print(datos["nombre"])  # Ejemplo: 'Juan'
 ```
 
-#### **3.2 Leer JSON desde una cadena de caracteres**
+#### **2.2 Leer JSON desde una cadena de caracteres**
 Para leer JSON desde una cadena, se usa `json.loads()`.
 
 Ejemplo:
@@ -61,9 +42,9 @@ print(datos["edad"])  # 30
 
 ---
 
-### **4. Escribir archivos JSON**
+### **3. Escribir archivos JSON**
 
-#### **4.1 Escribir JSON en un archivo**
+#### **3.1 Escribir JSON en un archivo**
 Se usa `json.dump()` para convertir un objeto de Python a JSON y escribirlo en un archivo.
 
 Ejemplo:
@@ -82,7 +63,7 @@ with open("salida.json", "w") as archivo:
     json.dump(datos, archivo, indent=4)  # `indent` para una salida legible
 ```
 
-#### **4.2 Convertir objetos Python a cadenas JSON**
+#### **3.2 Convertir objetos Python a cadenas JSON**
 
 Para convertir datos de Python a una cadena JSON, se usa `json.dumps()`.
 
@@ -107,7 +88,7 @@ Salida:
 
 ---
 
-### **5. Manipular datos JSON**
+### **4. Manipular datos JSON**
 
 Después de cargar un archivo JSON como un objeto de Python (como un diccionario o lista), puedes manipular los datos con las operaciones estándar de Python.
 
@@ -130,7 +111,7 @@ with open("datos.json", "w") as archivo:
 
 ---
 
-### **6. Manejo de errores**
+### **5. Manejo de errores**
 
 Cuando trabajas con JSON, es importante manejar **posibles excepciones** para evitar errores inesperados.
 
@@ -151,9 +132,9 @@ except Exception as e:
 
 ---
 
-### **7. Opciones avanzadas**
+### **6. Opciones avanzadas**
 
-#### **7.1 Serializar objetos personalizados**
+#### **6.1 Serializar objetos personalizados**
 
 El módulo `json` puede serializar objetos personalizados usando el argumento `default`.
 
@@ -189,7 +170,7 @@ Salida:
 
 ---
 
-#### **7.2 Ordenar claves**
+#### **6.2 Ordenar claves**
 
 Para ordenar las claves del JSON, usa el argumento `sort_keys`.
 
@@ -213,22 +194,17 @@ Salida:
 
 ---
 
-### **8. Conclusión**
+### **7. Conclusión**
 
-El manejo de archivos JSON en Python es sencillo y flexible gracias al módulo `json`. 
-Este permite trabajar con datos estructurados de forma legible y eficiente. 
-Con las funciones `load`, `loads`, `dump` y `dumps`, puedes realizar operaciones comunes como leer, escribir y manipular datos JSON en tus programas. 
-Además, con personalizaciones avanzadas, puedes adaptar el manejo de JSON a necesidades específicas.
-
----
-
-Claro, aquí tienes un ejemplo completo y básico con todas las etapas que mencionas:
+- El manejo de archivos JSON en Python es sencillo y flexible gracias al módulo `json`. Este permite trabajar con datos estructurados de forma legible y eficiente. 
+- Con las funciones `load`, `loads`, `dump` y `dumps`, puedes realizar operaciones comunes como leer, escribir y manipular datos JSON en tus programas. 
+- Además, con personalizaciones avanzadas, puedes adaptar el manejo de JSON a necesidades específicas.
 
 ---
 
-### **9. Ejemplo Completo**
+### **8. Ejemplo Completo**
 
-#### 9.1. Fichero JSON inicial (`datos.json`).
+#### 8.1. Fichero JSON inicial (`datos.json`).
 
 Este es el contenido inicial del archivo JSON que usaremos:
 
@@ -241,7 +217,7 @@ Este es el contenido inicial del archivo JSON que usaremos:
 }
 ```
 
-#### 9.2. Operaciones que el programa de ejemplo va a realizar.
+#### 8.2. Operaciones que el programa de ejemplo va a realizar.
 
 El código realiza las siguientes operaciones:
 
@@ -251,7 +227,7 @@ El código realiza las siguientes operaciones:
 4. Elimina un usuario por su `id`.
 5. Guarda los cambios en el archivo.
 
-#### 9.3. Código en Python.
+#### 8.3. Código en Python.
 
 ```python
 import json
@@ -385,9 +361,7 @@ if __name__ == "__main__":
     main()
 ```
 
----
-
-#### 9.4. Explicación paso a paso
+#### 8.4. Explicación paso a paso
 
 1. **Función `cargar_json`:**
    - Lee el contenido del archivo JSON.
@@ -413,9 +387,7 @@ if __name__ == "__main__":
    - Realiza las operaciones necesarias (actualizar, insertar, eliminar).
    - Guarda los datos actualizados en el archivo.
 
----
-
-### 9.5. Resultado final (`datos.json`).
+### 8.5. Resultado final (`datos.json`).
 
 Después de ejecutar el programa, el archivo `datos.json` tendrá el siguiente contenido:
 
@@ -436,4 +408,3 @@ Después de ejecutar el programa, el archivo `datos.json` tendrá el siguiente c
 }
 ``` 
 
----
