@@ -156,7 +156,7 @@ def convertir(obj):
     raise TypeError("Tipo no serializable")
 
 # Serializar el objeto
-cadena_json = json.dumps(datos, default=convertir, indent=4)
+cadena_json = json.dumps(datos, default = convertir, indent = 4)
 print(cadena_json)
 ```
 
@@ -179,7 +179,7 @@ Ejemplo:
 import json
 
 datos = {"z": 1, "a": 2, "m": 3}
-cadena_json = json.dumps(datos, sort_keys=True, indent=2)
+cadena_json = json.dumps(datos, sort_keys = True, indent = 2)
 print(cadena_json)
 ```
 
