@@ -1,4 +1,3 @@
-
 ## XML en Python
 
 ### **1. Importar el módulo `xml.etree.ElementTree`**
