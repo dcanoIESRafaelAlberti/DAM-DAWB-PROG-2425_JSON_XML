@@ -1,24 +1,12 @@
 ## JSON en Kotlin
 
-### **1. Conceptos básicos de JSON**
-
 El formato JSON en Kotlin es similar al de Python: se utiliza para representar pares clave-valor y listas. Es compatible con las estructuras de datos de Kotlin, como `Map` y `List`.
-
-Ejemplo de archivo JSON básico (`datos.json`):
-```json
-{
-    "usuarios": [
-        {"id": 1, "nombre": "Juan", "edad": 30},
-        {"id": 2, "nombre": "Ana", "edad": 25}
-    ]
-}
-```
 
 En Kotlin, estos datos se pueden mapear a clases de datos (`data class`) para trabajar con ellos de forma estructurada.
 
 ---
 
-### **2. Importar y configurar Gson**
+### **1. Importar y configurar Gson**
 
 Kotlin no tiene soporte nativo para JSON, pero librerías como **Gson** permiten manejarlo fácilmente.
 
@@ -40,9 +28,9 @@ import com.google.gson.Gson
 
 ---
 
-### **3. Leer archivos JSON**
+### **2. Leer archivos JSON**
 
-#### **3.1 Leer JSON desde un archivo**
+#### **2.1 Leer JSON desde un archivo**
 
 Usamos la clase `File` de Kotlin para leer el archivo como texto y luego `Gson` para convertirlo en objetos de Kotlin.
 
@@ -72,7 +60,7 @@ Este código:
 
 ---
 
-#### **3.2 Leer JSON desde una cadena**
+#### **2.2 Leer JSON desde una cadena**
 
 Puedes trabajar con cadenas JSON directamente en lugar de un archivo. 
 
@@ -87,9 +75,9 @@ println(datos.usuarios[0].nombre) // Salida: Juan
 
 ---
 
-### **4. Escribir archivos JSON**
+### **3. Escribir archivos JSON**
 
-#### **4.1 Escribir JSON en un archivo**
+#### **3.1 Escribir JSON en un archivo**
 
 Usamos `Gson().toJson()` para convertir un objeto Kotlin a JSON y luego lo guardamos con `File.writeText()`.
 
@@ -108,7 +96,7 @@ fun guardarJson(nombreFichero: String, datos: Datos) {
 
 ---
 
-#### **4.2 Convertir objetos Kotlin a cadenas JSON**
+#### **3.2 Convertir objetos Kotlin a cadenas JSON**
 
 Si no quieres guardar los datos en un archivo, puedes simplemente convertirlos a una cadena JSON.
 
@@ -134,7 +122,7 @@ Salida:
 
 ---
 
-### **5. Manipular datos JSON**
+### **4. Manipular datos JSON**
 
 Una vez que los datos JSON se cargan en un objeto Kotlin, puedes manipularlos fácilmente como cualquier otra colección.
 
@@ -183,7 +171,7 @@ fun eliminarUsuario(datos: Datos, idUsuario: Int) {
 
 ---
 
-### **6. Manejo de errores**
+### **5. Manejo de errores**
 
 Usamos bloques `try-catch` para manejar excepciones al leer o escribir archivos JSON.
 
@@ -206,7 +194,7 @@ fun cargarJsonSeguro(nombreFichero: String): Datos? {
 
 ---
 
-### **7. Ejemplo completo**
+### **6. Ejemplo completo**
 
 Con todas las piezas juntas, el flujo completo de operaciones sería:
 
@@ -236,7 +224,7 @@ fun main() {
 
 ---
 
-### **8. Resultado final**
+### **7. Resultado final**
 
 Después de ejecutar el programa, el archivo `datos.json` se verá así:
 ```json
@@ -250,7 +238,7 @@ Después de ejecutar el programa, el archivo `datos.json` se verá así:
 
 ---
 
-### **9. JSON en un `Map<String, Any>`**
+### **8. JSON en un `Map<String, Any>`**
 
 Si necesitas mayor flexibilidad, puedes deserializar el JSON en un `Map`. Esto es útil si no conoces la estructura del JSON o prefieres manipular los datos dinámicamente.
 
