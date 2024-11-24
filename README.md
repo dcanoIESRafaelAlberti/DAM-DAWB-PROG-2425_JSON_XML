@@ -23,6 +23,12 @@ Ejemplo de JSON:
 
 [Resumen del Manejo de Archivos JSON en Python](JSON_Python.md)
 
+## **JSON en Kotlin**
+
+[Resumen del Manejo de Archivos JSON en Kotlin](JSON_Kotlin.md)
+
+[Blog: Tratamiento de ficheros JSON](https://revilofe.github.io/blog/20240308-Tratamiento-JSON/)
+
 ---
 
 ## XML
@@ -55,6 +61,10 @@ Ejemplo de XML:
 ### **XML en Python**
 
 [Resumen del Manejo de Archivos XML en Python](XML_Python.md)
+
+### **XML en Kotlin**
+
+[Resumen del Manejo de Archivos XML en Kotlin](XML_Kotlin.md)
 
 ---
 
