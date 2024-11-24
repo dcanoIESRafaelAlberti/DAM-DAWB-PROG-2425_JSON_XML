@@ -1,32 +1,7 @@
 
-## XML
+## XML en Python
 
-XML (eXtensible Markup Language) es un formato estándar utilizado para estructurar y almacenar datos. 
-En Python, se gestiona principalmente con los módulos integrados `xml.etree.ElementTree` (más simple) o `xml.dom.minidom` (para representación legible). 
-También puedes usar librerías externas como `lxml` para funcionalidades avanzadas.
-
----
-
-### **1. Conceptos básicos de XML**
-
-Un archivo XML contiene elementos (tags), atributos y valores anidados. Es más estructurado que JSON pero también más verboso, es decir, requiere más texto para representar la misma cantidad de información.
-
-Ejemplo de XML:
-```xml
-<usuario>
-    <nombre>Juan</nombre>
-    <edad>30</edad>
-    <habilidades>
-        <habilidad>Python</habilidad>
-        <habilidad>JavaScript</habilidad>
-    </habilidades>
-    <activo>true</activo>
-</usuario>
-```
-
----
-
-### **2. Importar el módulo `xml.etree.ElementTree`**
+### **1. Importar el módulo `xml.etree.ElementTree`**
 
 El módulo `xml.etree.ElementTree` permite leer y manipular XML de manera sencilla.
 
@@ -36,9 +11,9 @@ import xml.etree.ElementTree as ET
 
 ---
 
-### **3. Leer archivos XML**
+### **2. Leer archivos XML**
 
-#### **3.1 Leer XML desde un archivo**
+#### **2.1 Leer XML desde un archivo**
 Se usa `ET.parse()` para convertir el contenido del archivo XML en un árbol de elementos.
 
 Ejemplo:
@@ -53,7 +28,7 @@ raiz = arbol.getroot()
 print(raiz.find("nombre").text)  # Ejemplo: 'Juan'
 ```
 
-#### **3.2 Leer XML desde una cadena de caracteres**
+#### **2.2 Leer XML desde una cadena de caracteres**
 Para leer XML desde una cadena, se usa `ET.fromstring()`.
 
 Ejemplo:
@@ -73,9 +48,9 @@ print(raiz.find("edad").text)  # Ejemplo: '30'
 
 ---
 
-### **4. Escribir archivos XML**
+### **3. Escribir archivos XML**
 
-#### **4.1 Escribir XML en un archivo**
+#### **3.1 Escribir XML en un archivo**
 Se construyen los elementos con `ET.Element` y luego se escribe en un archivo con `ET.ElementTree.write()`.
 
 Ejemplo:
@@ -96,7 +71,7 @@ arbol = ET.ElementTree(raiz)
 arbol.write("salida.xml", encoding="utf-8", xml_declaration=True)
 ```
 
-#### **4.2 Convertir objetos Python a cadenas XML**
+#### **3.2 Convertir objetos Python a cadenas XML**
 
 Para convertir datos de Python a XML como cadena, usa `ET.tostring()`.
 
@@ -124,7 +99,7 @@ Salida:
 
 ---
 
-### **5. Manipular datos XML**
+### **4. Manipular datos XML**
 
 Después de cargar un archivo XML como un árbol de elementos, puedes manipular los datos con operaciones estándar de Python.
 
@@ -150,7 +125,7 @@ arbol.write("datos.xml", encoding="utf-8", xml_declaration=True)
 
 ---
 
-### **6. Manejo de errores**
+### **4. Manejo de errores**
 
 Es importante manejar posibles excepciones al trabajar con XML para evitar errores inesperados.
 
@@ -171,7 +146,7 @@ except Exception as e:
 
 ---
 
-### **7. Conclusión**
+### **5. Conclusión**
 
 El manejo de archivos XML en Python es versátil y eficaz gracias al módulo integrado xml.etree.ElementTree. 
 Este módulo permite trabajar con datos estructurados de forma jerárquica, ofreciendo una interfaz intuitiva para crear, leer, modificar y guardar archivos XML.
@@ -186,9 +161,9 @@ En resumen, Python ofrece una solución robusta y extensible para gestionar dato
 
 ---
 
-### **8. Ejemplo Completo**
+### **6. Ejemplo Completo**
 
-#### **8.1. Archivo XML inicial (`datos.xml`)**
+#### **6.1. Archivo XML inicial (`datos.xml`)**
 
 ```xml
 <usuarios>
@@ -205,7 +180,7 @@ En resumen, Python ofrece una solución robusta y extensible para gestionar dato
 </usuarios>
 ```
 
-#### **8.2. Código en Python**
+#### **6.2. Código en Python**
 
 ```python
 import xml.etree.ElementTree as ET
@@ -352,7 +327,7 @@ if __name__ == "__main__":
     main()
 ```
 
-#### **8.3. Resultado final (`datos.xml`)**
+#### **6.3. Resultado final (`datos.xml`)**
 
 ```xml
 <usuarios>
