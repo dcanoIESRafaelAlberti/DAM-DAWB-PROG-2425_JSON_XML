@@ -1,4 +1,4 @@
-## ACTIVIDAD XML
+## ACTIVIDAD 2 - XML
 
 ### **1. Manejo de Archivos XML**
 
