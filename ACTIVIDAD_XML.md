@@ -178,5 +178,3 @@ Operaciones completadas. Archivo actualizado.
 - Utiliza las funciones auxiliares `limpiar_consola` y `pausar` para mejorar la legibilidad en consola.
 - En caso de errores, imprime mensajes claros y específicos.
 - Asegúrate de probar tu programa en diferentes escenarios para validarlo correctamente.
-
-¿Te gustaría ajustar o ampliar algún punto de esta actividad? 😊
