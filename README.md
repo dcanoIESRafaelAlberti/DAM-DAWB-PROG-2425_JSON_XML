@@ -1,6 +1,6 @@
 ## JSON
 
-Los archivos JSON (JavaScript Object Notation) son un formato de datos ligero utilizado para intercambiar información de manera sencilla. 
+Los archivos JSON *(JavaScript Object Notation)* son un formato de datos ligero utilizado para intercambiar información de manera sencilla. 
 En Python, se gestionan principalmente con el módulo integrado `json`, que permite leer, escribir y manipular datos JSON de forma sencilla.
 
 ---
